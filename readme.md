@@ -1,3 +1,3 @@
-# webfolder syntra starter-kit
+# Dashboard made with Bulma
 
-dit is een basis starter-kit
+https://bulma-dashboard-DS.surge.sh

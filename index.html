@@ -1,28 +1,686 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./dist/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1461bc1f12.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <h1>Dit is een test</h1>
-    <h2>Dit is een test</h2>
-    <h3>Dit is een test</h3>
-    <h4>Dit is nog een titelkes</h4>
-    <button>
-      <svg class="icon">
-        <use xlink:href="./icons/symbol-defs.svg#icon-emo-devil"></use>
-      </svg>
-      <span>click me</span>
-    </button>
-    <button>
-      <svg class="icon icon-emo-displeased">
-        <use xlink:href="./icons/symbol-defs.svg#icon-emo-displeased"></use>
-      </svg>
-      <span>click me</span>
-    </button>
-    <script src="./icons/svgxuse.js"></script>
+  <body class="has-background-light">
+    <!-- HEADER -->
+    <nav class="level pt-2 pl-4 pb-2 pr-4 has-background-white box">
+      <div class="level-left">
+        <div class="level-item">
+          <h1 class="title is-5">Dashboard</h1>
+        </div>
+      </div>
+
+      <div class="level-right">
+        <a href="#" class="level-item">
+          <figure class="image is-32x32">
+            <img class="is-rounded" src="images/photo1.jpg" />
+          </figure>
+        </a>
+        <a href="#" class="level-item">
+          <span class="icon has-text-dark">
+            <i class="fas fa-cog"></i>
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- GRID -->
+    <div class="tile is-ancestor ml-2 mr-2">
+      <div class="tile is-vertical">
+        <div class="tile">
+          <!-- SMALL RATING PROFILES -->
+          <div class="tile is-parent is-6">
+            <div class="tile is-child box p-4">
+              <div class="columns">
+                <div class="column">
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo8.jpg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Daisy Fitzroy</h1>
+                        <p class="subtitle is-7">Automation</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo4.jpg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-light">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Glenn Crake</h1>
+                        <p class="subtitle is-7">Test Execution Engine</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo9.jpg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-light">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-light">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Oryx Leucoryx</h1>
+                        <p class="subtitle is-7">Test Execution Engine</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="column">
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo3.jpg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-light">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Corvo Attano</h1>
+                        <p class="subtitle is-7">Product Quality Assurance</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo15.jpg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-light">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Elizabeth DeWitt</h1>
+                        <p class="subtitle is-7">Automation</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo10.jpg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Zeb Kermode</h1>
+                        <p class="subtitle is-7">Test Execution Engine</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="column">
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo12.jpeg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Leia Organa</h1>
+                        <p class="subtitle is-7">Management</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo17.jpg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-light">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Jimmy Snowman</h1>
+                        <p class="subtitle is-7">Management</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="images/photo14.jpg" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon is-small has-text-warning">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <h1 class="title is-6 mt-1">Morgan Yu</h1>
+                        <p class="subtitle is-7">Test Execution Engine</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- INPUT THINGY -->
+          <div class="tile is-parent is-6">
+            <div class="tile is-child box">
+              <div class="columns">
+                <div class="column is-one-third">
+                  <img src="images/photo7.jpg" />
+                </div>
+                <div class="column">
+                  <div class="field">
+                    <label class="label is-small">Name</label>
+                    <div class="control has-icons-left">
+                      <input
+                        class="input is-small"
+                        type="text"
+                        placeholder=""
+                      />
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label is-small">Birthday</label>
+                    <div class="control">
+                      <input
+                        class="input is-small"
+                        type="date"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label is-small">Email</label>
+                    <div class="control has-icons-left">
+                      <input
+                        class="input is-small"
+                        type="email"
+                        placeholder=""
+                      />
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="control mb-3">
+                    <label class="radio">
+                      <input type="radio" name="answer" />
+                      Inpatient
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="answer" />
+                      Outpatient
+                    </label>
+                  </div>
+                  <div class="field is-grouped">
+                    <p class="control">
+                      <button class="button is-primary">Reset</button>
+                    </p>
+                    <p class="control">
+                      <button class="button is-primary is-light">Save</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- VISITS TABLE -->
+        <div class="tile is-parent">
+          <div class="tile is-child box pl-0 pr-0 pt-1 pb-1">
+            <table class="table is-fullwidth">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th>Date</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Diagnosis</th>
+                  <th>Symptoms</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <span class="icon has-text-light">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Cyril Barone</td>
+                  <td>bwcarty@msn.com</td>
+                  <td>Collywobbles</td>
+                  <td>A bellyache or butterflies in the stomach</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <span class="icon has-text-light">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Dottie Ward</td>
+                  <td>dobey@yahoo.com</td>
+                  <td>Clinomania</td>
+                  <td>The excessive desire to stay in bed</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <span class="icon has-text-warning">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Tommie Shurtleff</td>
+                  <td>rddesign@att.net</td>
+                  <td>A Serious Case of Nothing to Wear</td>
+                  <td>Can't go to school because has nothing to wear</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <span class="icon has-text-warning">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Jesse Holdman</td>
+                  <td>frosal@optoline.net</td>
+                  <td>Cyrus Virus</td>
+                  <td>Obsessing over wrecking balls</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <span class="icon has-text-warning">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Isaiah Greggs</td>
+                  <td>feamster@optoline.net</td>
+                  <td>Dysania</td>
+                  <td>The struggle to get up in the morning</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>
+                    <span class="icon has-text-warning">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Lacy Fordham</td>
+                  <td>jdhildeb@mac.com</td>
+                  <td>Empirism</td>
+                  <td>A sudden craving for tea</td>
+                </tr>
+                <tr class="is-selected">
+                  <td>7</td>
+                  <td>
+                    <span class="icon has-text-warning">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Camilla McCulley</td>
+                  <td>elmer@yahoo.ca</td>
+                  <td>The Dancing Plague</td>
+                  <td>Heavy dancing</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>
+                    <span class="icon has-text-light">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Gita Noda</td>
+                  <td>hachi@yahoo.com</td>
+                  <td>Witzelsucht</td>
+                  <td>Makes bad puns and jokes at inappropriate moments</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>
+                    <span class="icon has-text-light">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Rolando Schulze</td>
+                  <td>scotfl@me.com</td>
+                  <td>Nintendonitis</td>
+                  <td>
+                    Muscle pain around the hands and arms from playing Wii too
+                    much
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>
+                    <span class="icon has-text-light">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Abdul Abshire</td>
+                  <td>jeteve@aol.com</td>
+                  <td>A Serious Case of Nothing to Wear</td>
+                  <td>Can't go to school because has nothing to wear</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>
+                    <span class="icon has-text-warning">
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </td>
+                  <td>25 November</td>
+                  <td>Cristin Hakala</td>
+                  <td>yruan@me.com</td>
+                  <td>Clinomania</td>
+                  <td>The excessive desire to stay in bed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- ASIDE PATIENTS TABLE -->
+      <div class="tile is-parent is-2">
+        <div class="tile is-child box pl-0 pr-0 pt-2 pb-2">
+          <table class="table is-fullwidth">
+            <tbody>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo2.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Cyril Barone</p>
+                  <p class="subtitle is-6">Outpatient</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo1.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Dottie Ward</p>
+                  <p class="subtitle is-6">Outpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo5.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Tommie Shurtleff</p>
+                  <p class="subtitle is-6">inpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo6.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Jesse Holdman</p>
+                  <p class="subtitle is-6">Inpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo11.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Isaiah Greggs</p>
+                  <p class="subtitle is-6">Inpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo16.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Lacy Fordham</p>
+                  <p class="subtitle is-6">Inpatient</p>
+                </td>
+              </tr>
+              <tr class="is-selected">
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo7.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Camilla McCulley</p>
+                  <p class="subtitle is-6">Inpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo13.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Gita Noda</p>
+                  <p class="subtitle is-6">Outpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo1.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Dottie Ward</p>
+                  <p class="subtitle is-6">Outpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo5.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Tommie Shurtleff</p>
+                  <p class="subtitle is-6">inpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo6.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Jesse Holdman</p>
+                  <p class="subtitle is-6">Inpatient</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <figure class="image is-48x48">
+                    <img class="is-rounded" src="images/photo11.jpg" />
+                  </figure>
+                </td>
+                <td>
+                  <p class="title is-6">Isaiah Greggs</p>
+                  <p class="subtitle is-6">Inpatient</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
